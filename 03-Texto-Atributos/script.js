@@ -103,3 +103,59 @@ lista.textContent = "Cargando..."
 
 titulo.innerHTML = "¡Amigos <span>campeoncitos</span>!"
 lista.innerHTML = `<li>👻 Jinx</li> <li class="oculto">🦯 Viktor</li> <li>🔫 Caitlyn</li>`;
+
+/* 
+
+    getAttributte()
+
+    Devuelve el valor del atributo del elemento.
+
+    elemento.getAttribute(atributo)
+
+*/
+
+const enlace = document.getElementsByTagName("a")
+
+console.log(enlace[0].getAttribute("href"))
+
+
+/* 
+
+    removeAttribute()
+
+    Elimina el valor del atributo de un elemento.
+
+        elemento.removeAttribute(atributo)
+
+*/
+
+enlace[0].removeAttribute("href");
+
+console.log(enlace[0].getAttribute("href"))
+
+/* 
+
+    setAttribute()
+    
+    Asigna un atributo y un valor a un elemento.
+
+        elemento.setAttribute(atributo, valor)
+
+    - Sobreescribir un atributo ya declarado.
+    - Crear un nuveo atributo y su valor.
+
+*/
+
+enlace[0].setAttribute("href", "")
+
+console.log(enlace[0].getAttribute("href"));
+
+/* Antes */
+
+console.log(enlace[0].getAttribute("target"));
+
+enlace[0].setAttribute("target" , "_blank");
+
+/* Después */
+
+console.log(enlace[0].getAttribute("target"));
