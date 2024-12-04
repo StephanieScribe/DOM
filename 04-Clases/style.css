@@ -8,10 +8,10 @@ body {
     font-family: 'Franklin Gothic Medium', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.ingredients {
-    margin: 0;
-    width: 0;
-    border: 2px hotpink;
+.ingredientes {
+    margin: 0 auto;
+    width: 300px;
+    border: 2px solid purple;
 }
 
 .lista {
